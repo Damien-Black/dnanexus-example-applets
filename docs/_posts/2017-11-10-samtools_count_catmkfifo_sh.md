@@ -29,7 +29,7 @@ First, we establish a named pipe on the worker. Then, we stream to *stdin* of th
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------|:-------:|--------:|
+|:--------:|:-------:|:--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: red">**NO**</span>   |
 
 ## Output BAM file read count
@@ -45,7 +45,7 @@ Now that we have created our FIFO special file representing the streamed BAM, we
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------|:-------:|--------:|
+|:--------:|:-------:|:--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 | output file   | <span style="color: green">**YES**</span>   | <span style="color: red">**NO**</span>   |
 
@@ -67,7 +67,7 @@ We can upload as a stream to the platform using the commands [`dx-upload-all-out
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------|:-------:|--------:|
+|:--------|:-------:|:--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 | output file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 
