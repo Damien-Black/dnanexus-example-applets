@@ -103,7 +103,8 @@ header {
 
 			&:hover {
 				text-decoration: none;
-				color: #fff;
+				color: $link-hover-color;
+				transform: scale(1.1,1.1);
 				@media #{$mid-point} {
 					border-bottom-color: $link-hover-color;
 				}
