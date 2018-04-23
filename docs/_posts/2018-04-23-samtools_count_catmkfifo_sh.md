@@ -1,7 +1,7 @@
 ---
 categories:
 - bash
-date: '2017-11-10'
+date: '2018-04-23'
 github_link: https://github.com/Damien-Black/dnanexus-example-applets/tree/master/Tutorials/bash/samtools_count_catmkfifo_sh
 summary: SAMtools count using mkfifo files and dx cat download stream (bash)
 title: Mkfifo and dx cat
@@ -29,7 +29,7 @@ First, we establish a named pipe on the worker. Then, we stream to *stdin* of th
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------:|:-------:|:--------:|
+|:--------|:-------:|--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: red">**NO**</span>   |
 
 ## Output BAM file read count
@@ -45,7 +45,7 @@ Now that we have created our FIFO special file representing the streamed BAM, we
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------:|:-------:|:--------:|
+|:--------|:-------:|--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 | output file   | <span style="color: green">**YES**</span>   | <span style="color: red">**NO**</span>   |
 
@@ -67,7 +67,7 @@ We can upload as a stream to the platform using the commands [`dx-upload-all-out
 ```
 
 | FIFO | *stdin* | *stdout* |
-|:--------|:-------:|:--------:|
+|:--------|:-------:|--------:|
 | BAM file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 | output file   | <span style="color: green">**YES**</span>   | <span style="color: green">**YES**</span>   |
 
