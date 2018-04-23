@@ -4,13 +4,15 @@ This applet performs a basic `samtools view -c {bam}` command, referred to as "S
 For bash scripts, inputs to a job execution become environment variables. The inputs from our `dxapp.json` file are formatted as shown below:
 ```json
 {
-  "inputSpec": [{
-    "name": "mappings_bam",
-    "label": "Mapping",
-    "class": "file",
-    "patterns": ["*.bam"],
-    "help": "BAM format file."
-  }],
+  "inputSpec": [
+    {
+      "name": "mappings_bam",
+      "label": "Mapping",
+      "class": "file",
+      "patterns": ["*.bam"],
+      "help": "BAM format file."
+    }
+  ],
 }
 ```
 The object `mappings_bam`, a [DNAnexus link](https://wiki.dnanexus.com/FAQ#What-are-DNAnexus-links,-and-how-are-they-different-from-using-the-data-object-IDs%3F)
